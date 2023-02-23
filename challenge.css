@@ -22,6 +22,21 @@ body {
   font-size: 22px;
   padding: 15px;
   text-transform: uppercase;
+  position: relative;
+}
+
+.product-title::before {
+  content: "SALE";
+  background-color: red;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  left: -25px;
+  letter-spacing: 3.23px;
 }
 
 /* PRODUCT INFORMATION */
@@ -46,7 +61,8 @@ p {
 .more-info:link,
 .more-info:visited {
   color: #000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .more-info:hover,
@@ -54,6 +70,40 @@ p {
   text-decoration: none;
 }
 
+/* COLOR PICKER */
+.color-picker {
+  font-size: 0;
+}
+
+.color-picker .box {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.color-picker .black {
+  background-color: #0c0c0c;
+}
+
+.color-picker .blue {
+  background-color: rgb(24, 24, 236);
+}
+
+.color-picker .red {
+  background-color: rgb(240, 22, 22);
+}
+
+.color-picker .yellow {
+  background-color: rgb(250, 250, 20);
+}
+
+.color-picker .green {
+  background-color: rgb(24, 233, 24);
+}
+.color-picker .brown {
+  background-color: rgb(216, 107, 34);
+}
 /* PRODUCT DETAILS */
 
 .details-title {
